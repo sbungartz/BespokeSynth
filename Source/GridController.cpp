@@ -235,5 +235,7 @@ void GridControllerMidi::SetUp(GridLayout* layout, int page, MidiController* con
 
 void GridControllerMidi::UnhookController()
 {
+   if (mMidiController != nullptr)
+      ResetLights();
    mMidiController = nullptr;
 }
